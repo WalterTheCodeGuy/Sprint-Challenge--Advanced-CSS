@@ -1,2 +1,13 @@
 // Mixins Here
 
+.btn-style(@bg-color, @width) {
+  background-color: @bg-color;
+  width: @width;
+}
+
+.flex(@flow, @justify, @align){
+  display: flex;
+  flex-flow: @flow;
+  justify-content: @justify;
+  align-items: @align;
+}

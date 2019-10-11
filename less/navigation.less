@@ -6,15 +6,31 @@
   background-color: @nav-bg;
   border-bottom: 1px solid @nav-border;
 
+    @media @phone {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+    }
+
   h1 {
     font-size: 4rem;
     padding-top: 10px;
+
+    @media @phone {
+      margin: 0 auto;
+    }
   }
 
   nav {
     width: 800px;
     margin: 0 auto;
     padding: 15px;
+
+    @media @phone {
+      width: 500px;
+    }
   }
 
   a {
